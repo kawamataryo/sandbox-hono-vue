@@ -4,7 +4,9 @@
       <Card>
         <CardHeader>
           <CardTitle>About</CardTitle>
-          <CardDescription>Simple page to test Vue Router navigation.</CardDescription>
+          <CardDescription
+            >Simple page to test Vue Router navigation.</CardDescription
+          >
         </CardHeader>
         <CardContent class="space-y-4">
           <p class="text-sm text-muted-foreground">This is a secondary page.</p>
@@ -20,9 +22,13 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 </script>
 
-<style scoped>
-</style>
-
+<style scoped></style>

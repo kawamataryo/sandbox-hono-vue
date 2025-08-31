@@ -1,0 +1,12 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+.wrangler
+
+# Generated files
+worker-configuration.d.ts
+
+# Package files
+package-lock.json

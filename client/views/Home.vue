@@ -21,8 +21,8 @@
         <CardFooter>
           <div class="w-full">
             <Label>Response</Label>
-            <pre class="mt-2 rounded-md border p-3 text-sm overflow-x-auto">
-{{ responseText }}
+            <pre class="mt-2 rounded-md border p-3 text-sm overflow-x-auto"
+              >{{ responseText }}
             </pre>
             <div class="mt-4">
               <RouterLink to="/about">
@@ -34,7 +34,6 @@
       </Card>
     </div>
   </div>
-  
 </template>
 
 <script setup lang="ts">
@@ -43,7 +42,14 @@ import { RouterLink } from 'vue-router'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 
 const text = ref('')
 const loading = ref(false)
@@ -58,7 +64,7 @@ async function onSubmit() {
     const res = await fetch('/api/echo', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text: text.value })
+      body: JSON.stringify({ text: text.value }),
     })
     const data = await res.json()
     if (!res.ok) {
@@ -79,5 +85,4 @@ function onClear() {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
