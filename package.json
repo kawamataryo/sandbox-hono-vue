@@ -25,7 +25,7 @@
     "@vueuse/core": "^13.8.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "hono": "4.9.5",
+    "hono": "4.9.6",
     "lucide-vue-next": "^0.542.0",
     "reka-ui": "^2.5.0",
     "tailwind-merge": "^3.3.1",
